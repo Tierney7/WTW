@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch the Mavs Your Way - Dallas Mavericks Broadcasting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">WATCH THE MAVS YOUR WAY</h1>
+            <p class="hero-subtitle">Catch all the Action this Season</p>
+        </div>
+    </header>
+
+    <!-- Live Games Section -->
+    <section class="live-games">
+        <div class="container">
+            <h2 class="section-title">LIVE GAMES</h2>
+            
+            <div class="broadcast-grid">
+                <!-- Watch Section -->
+                <div class="broadcast-column">
+                    <h3 class="column-title">WATCH:</h3>
+                    <div class="broadcaster-list">
+                        <div class="broadcaster-item">
+                            <div class="broadcaster-logo">WFAA 8</div>
+                            <p class="broadcaster-name">WFAA Channel 8</p>
+                        </div>
+                        <div class="broadcaster-item">
+                            <div class="broadcaster-logo">KFAA 29</div>
+                            <p class="broadcaster-name">KFAA Channel 29</p>
+                        </div>
+                        <div class="broadcaster-item">
+                            <div class="broadcaster-logo mavs-tv">MavsTV</div>
+                            <p class="broadcaster-name">MavsTV</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listen Section -->
+                <div class="broadcast-column">
+                    <h3 class="column-title">LISTEN:</h3>
+                    <div class="broadcaster-list">
+                        <div class="broadcaster-item">
+                            <div class="broadcaster-logo radio">97.1</div>
+                            <p class="broadcaster-name">97.1 The Eagle</p>
+                        </div>
+                        <div class="broadcaster-item">
+                            <div class="broadcaster-logo radio">99.1</div>
+                            <p class="broadcaster-name">99.1 Zona MX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Your Local Station Section -->
+    <section class="local-station">
+        <div class="container">
+            <h2 class="section-title">FIND YOUR LOCAL STATION</h2>
+            <p class="section-description">Enter your ZIP code to find local broadcast options and cable providers with KFAA access</p>
+            
+            <div class="station-finder">
+                <div class="zip-search">
+                    <input type="text" id="zipInput" placeholder="Enter ZIP Code" maxlength="5">
+                    <button id="findButton" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Find Stations
+                    </button>
+                </div>
+                
+                <div id="stationResults" class="station-results hidden">
+                    <div class="results-content">
+                        <h3>Available Services in Your Area</h3>
+                        <div id="resultsList" class="services-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cable Services with KFAA -->
+            <div class="cable-services">
+                <h3 class="subsection-title">Cable Services with KFAA Ch. 29</h3>
+                <div class="cable-logos">
+                    <div class="cable-item">
+                        <div class="cable-logo">Spectrum</div>
+                    </div>
+                    <div class="cable-item">
+                        <div class="cable-logo">AT&T</div>
+                    </div>
+                    <div class="cable-item">
+                        <div class="cable-logo">Frontier</div>
+                    </div>
+                    <div class="cable-item">
+                        <div class="cable-logo">Verizon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel Master Section -->
+    <section class="channel-master">
+        <div class="container">
+            <div class="channel-master-content">
+                <h2 class="section-title">Don't see your service above?</h2>
+                <p class="channel-master-text">You can still watch on WFAA & KFAA with an antenna!</p>
+                
+                <a href="https://www.channelmaster.com/mavs" target="_blank" class="btn btn-antenna">
+                    <i class="fas fa-broadcast-tower"></i> GET YOUR FREE ANTENNA
+                </a>
+                
+                <div class="channel-master-footer">
+                    <p class="courtesy">Courtesy of <span class="channel-master-logo">ChannelMaster</span></p>
+                    <p class="channel-master-description">
+                        Channel Master is the industry leader in over-the-air broadcast entertainment products and solutions, 
+                        providing the highest quality and value for consumers since 1949. Channel Master offers a complete 
+                        portfolio of over-the-air TV antennas, OTA DVR's, TV antenna mounting equipment, amplifiers, cables, 
+                        connectors and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stream Anytime Section -->
+    <section class="stream-anytime">
+        <div class="container">
+            <h2 class="section-title">STREAM ANYTIME</h2>
+            <div class="stream-content">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612742/2025/09/MavsTV_Logo_Horizontal_Full-Color-700x225-1.png" alt="mavstv">
+                <div class="mavstv-logo-large">MavsTV</div>
+                <p class="stream-description">
+                    Watch live and on-demand games and get access to exclusive content, original shows, 
+                    classic games, and more with MavsTV!
+                </p>
+                <button class="btn btn-subscribe">
+                    <i class="fas fa-play-circle"></i> SUBSCRIBE NOW
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Broadcast Schedule Section -->
+    <section class="broadcast-schedule">
+        <div class="container">
+            <h2 class="section-title">BROADCAST SCHEDULE</h2>
+            
+            <div class="schedule-filters">
+                <select id="monthFilter" class="filter-select">
+                    <option value="all">All Months</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                </select>
+            </div>
+
+            <div class="schedule-table-wrapper">
+                <table class="schedule-table" id="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Opponent</th>
+                            <th>Broadcast</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scheduleBody">
+                        <!-- Schedule data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+            
+            <div class="faq-list">
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is KFAA 29?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>KFAA 29 is a TEGNA-owned station broadcasting Dallas Mavericks games for free over-the-air and through participating cable providers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>I do not see KFAA Ch 29 - can I still watch?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>TEGNA station KFAA Dallas-Ft. Worth (Ch. 29) will broadcast all games not exclusively televised nationally – for free over-the-air.</p>
+                        <p>If you're unable to receive KFAA over-the-air, check with your cable or satellite provider to ensure you have access to Channel 29. You can also watch with a digital antenna from ChannelMaster or stream games on MavsTV.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who will be calling the games?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The broadcast team features experienced commentators including Jeff "Skin" Wade and other talented announcers who bring the excitement of Mavericks basketball to your screen.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I watch games outside Dallas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For fans outside the Dallas-Fort Worth area, MavsTV streaming service provides access to live and on-demand games. Additionally, nationally televised games are available through their respective networks. Please verify current broadcast availability for your location.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need a subscription to watch games on WFAA or KFAA?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! Both WFAA Ch. 8 and KFAA Ch. 29 are free over-the-air channels. You can watch games for free with a digital antenna. They're also available through most cable and satellite providers in the Dallas-Fort Worth area.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the difference between MavsTV and the broadcast channels?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>MavsTV is a streaming subscription service that offers live games, on-demand replays, exclusive content, original shows, and classic games. WFAA and KFAA are free broadcast channels showing select games. MavsTV provides more comprehensive coverage and additional content for dedicated fans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dallas Mavericks. All rights reserved.</p>
+            <p class="footer-note">Game schedules and broadcast information subject to change.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
