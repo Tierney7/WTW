@@ -112,7 +112,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--mavs-navy) 0%, var(--mavs-blue) 100%);
+    background-image: url('https://cdn.nba.com/teams/uploads/sites/1610612742/2025/10/new-meet-bg-over.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--mavs-white);
     padding: 100px 20px;
     text-align: center;
