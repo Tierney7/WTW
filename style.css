@@ -496,14 +496,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .broadcast-badge {
-    display: inline-block;
-    padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* choose a width that fits your longest label */
+    height: 32px; /* optional for vertical consistency */
     background: var(--mavs-blue);
     color: var(--mavs-white);
     border-radius: 4px;
     font-size: 0.85rem;
     font-weight: 600;
-}
+    text-align: center;
+    white-space: nowrap; /* prevent wrapping */
+  }
 
 /* FAQs Section */
 .faqs {
